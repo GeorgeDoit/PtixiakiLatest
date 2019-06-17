@@ -1,0 +1,7 @@
+{
+  "name": "tst",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

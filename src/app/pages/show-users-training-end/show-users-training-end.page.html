@@ -1,0 +1,45 @@
+<ion-header no-border>
+    <ion-toolbar transparent >
+      <ion-buttons slot="start">
+        <ion-icon size="large" color="light" name="close" (click)="close()"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content fullscreen>
+  <ion-card >
+    <ion-card-header>
+        <ion-card-title>
+            <div class="text-block">
+            <h4>{{dynamicText}} Completed!</h4>
+          </div> 
+        </ion-card-title>
+        <ion-card-content>
+
+          <div class="calories">
+            {{calories}} calories burned!
+
+          </div>
+        </ion-card-content>
+        
+        <ion-card>
+          <ion-card-title>
+            Weight
+          </ion-card-title>
+        </ion-card>
+        <form [formGroup]="weightForm" (ngSubmit)="saveWeight() " novalidate>
+            <ion-item>
+              <ion-input class="input" formControlName="weight" type="number" placeholder="Enter your weight here" [class.invalid]="!weightForm.controls.weight.valid"></ion-input>
+            </ion-item>
+            <ion-item class="error-message" *ngIf="!weightForm.controls.weight.valid">
+              <p>please enter a valid weight.</p>
+            </ion-item>
+ 
+              <ion-button expand="block" type="submit" [disabled]=submitted >Sumbit</ion-button>
+            
+        </form>
+
+      </ion-card-header>
+  </ion-card>
+</ion-content>
+  

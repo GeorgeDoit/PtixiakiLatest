@@ -1,0 +1,98 @@
+{
+    "warmup": [
+        {
+            "title": " Jumping Rope",
+            "content": "1 minute",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "20"
+        },
+        {
+            "title": "JUMPING JACKS",
+            "content": "x60 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "5.1"
+        },
+        {
+            "title": "PUSH UPS",
+            "content": "x15",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "5.1"
+        },
+        {
+            "title": "PLANK",
+            "content": "x60 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3"
+        },
+        {
+            "title": "BURPEES",
+            "content": "x60 seconds ",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "8"
+        },
+        {
+            "title": "SQUATS",
+            "content": "x60 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10.1"
+        }
+    ],
+    "exercises": [
+        {
+            "title": "jab -straight right -left hook -roll",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "straight right -jab -right hook -roll",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "jab -straight right -slip -straight right",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "jab -straight right -slip -straight right -roll",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "jab -straight right -slip -straight right -roll -straight right",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "jab -straight right -slip -straight right -left hook",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "jab -straight right -slip -straight right -left hook -roll",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        },
+        {
+            "title": "jab -straight right -left hook -roll -roll -straight right",
+            "content": "x30 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.45"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-buttons slot="start">
+      <ion-icon size="large" color="light" name="arrow-round-back"(click)="abort()"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card *ngIf="exercise">
+    <ion-card-header>
+      <ion-card-title>
+        {{ exercise.title }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        {{ exercise.content }}
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <img src="{{ exercise.url }}" /> 
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item >
+    {{ exercise.explanation }}
+  </ion-item>
+
+  <ion-button expand="block" (click)="AddExercise()">Add Exercise</ion-button>
+
+
+  </ion-content>

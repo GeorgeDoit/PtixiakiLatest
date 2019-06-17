@@ -1,0 +1,23 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-buttons slot="start">
+      <ion-icon size="large" color="light" name="arrow-round-back"(click)="abort()"></ion-icon>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card *ngFor="let w of (FullWork | slice: noOfItem - 1:noOfItem)">
+    <ion-card-header>
+      <ion-card-title>
+        {{ w.title }}
+      </ion-card-title>
+      <ion-card-content>
+        <img src="{{ w.url }}" />
+        <ion-button color="danger" size="small" shape="round" (click)="done(0)">SKIP</ion-button>
+        <ion-button slot="end" color="success" size="small"shape="round"(click)="done(w.calories)">DONE</ion-button>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

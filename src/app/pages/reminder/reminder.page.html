@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon size="large" color="light" name="arrow-round-back"(click)="abort()"></ion-icon>
+    </ion-buttons>
+    <ion-title>reminder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let timer of timerTable let i=index">
+    <ion-card-title>
+      {{timer.time}}
+      <ion-icon class="test" color="dark" name="close" (click)="deleteTimer(timer.id)" ></ion-icon> 
+    </ion-card-title>
+    <ion-toggle color="secondary" [(ngModel)]="timer.toggle" (ionChange)="change(timer)"></ion-toggle>
+
+  </ion-card>
+ 
+  <ion-icon class="add" color="light" name="add-circle-outline" (click)="picker.open()">
+      <ion-datetime #picker picker-format=" HH:mm" [(ngModel)]="x" (ionChange)="setTimer(x)"> </ion-datetime>
+  </ion-icon>
+  
+</ion-content>

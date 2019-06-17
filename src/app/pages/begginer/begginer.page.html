@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/home"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Lesson {{ lessonId }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-list transparent>
+      <ion-list-header>WARMUP</ion-list-header>
+  
+      <ion-item *ngFor="let w of warmup">
+        <ion-card>
+          <div class="img">
+            <img src="{{ w.url }}" />
+          </div>
+  
+          <div class="card-title">{{ w.title }}</div>
+  
+          <ion-card-content>
+            <ion-text>
+              {{ w.content }}
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+  
+      <ion-list-header>EXERSICES</ion-list-header>
+  
+      <ion-item *ngFor="let e of exersices">
+        <ion-card (click)="Explanation(e)">
+          <div class="img">
+            <img src="{{ e.url }}" />
+          </div>
+          <div class="card-title">{{ e.title }}</div>
+          <ion-card-content>
+            <ion-text>
+              {{ e.content }}
+            </ion-text>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+  
+    <ion-button expand="block" (click)="StartExercising()">START</ion-button>
+  </ion-content>
+  

@@ -1,0 +1,28 @@
+ion-card{
+    position: relative;
+
+    background:rgba(250,250,250,0.8) ;
+}
+
+.logout{
+    --background:#151515;
+    --color:#E0E2E5 ;
+}
+
+ion-button{
+    --background:red;
+    --colro:red;
+}
+
+.tips{
+
+    position: relative;
+
+    .myOverlay{
+        
+        position: absolute;
+        top: 0px;
+        color: #fff;
+    
+    }
+}

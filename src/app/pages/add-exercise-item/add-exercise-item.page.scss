@@ -1,0 +1,41 @@
+ion-toolbar {
+  
+  background:transparent;
+  --ion-color-base: transparent !important;
+  
+  }
+    
+  ion-content{
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  ion-card{
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  ion-card-content {
+    height: 100%;
+    color:red;
+  }
+
+  ion-button {
+    height: 75px;
+    --background:#9C4C3D;
+    align-self: center;
+    opacity: 0.9;
+  }
+
+  ion-item{
+    --background: rgba(0, 0, 0, 0.9);
+    color:wheat;
+  }
+
+  ion-card-title{
+    color:white;
+  }
+
+  ion-card-subtitle{
+    padding-top: 10%;
+    color:red;
+  }
+

@@ -1,0 +1,105 @@
+{
+    "warmup": [
+        {
+            "title": " Jumping Rope",
+            "content": "3 minutes",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "60"
+        },
+        {
+            "title": "JUMPING JACKS",
+            "content": "x45 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "4.2"
+        },
+        {
+            "title": "PUSH UPS",
+            "content": "x10",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "3.3"
+        },
+        {
+            "title": "PLANK",
+            "content": "x45 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.3"
+        },
+        {
+            "title": "BURPEES",
+            "content": "x45 seconds ",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "6"
+        },
+        {
+            "title": "SQUATS",
+            "content": "x45 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "7.5"
+        }
+    ],
+    "exercises": [
+        {
+            "title": "jab straight right",
+            "content": "x25 seconds",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "straight right jab",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab right hook",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "straight right left hook",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab -straight right -jab",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab -straight right -jab -straight right",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab straight right left hook",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "straight right jab right hook",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x25",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "2.9"
+        }
+    ]
+}

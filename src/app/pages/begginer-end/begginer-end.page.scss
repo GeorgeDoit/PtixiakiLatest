@@ -1,0 +1,101 @@
+ion-toolbar {
+    
+  --background: transparent;
+  --ion-color-base: transparent !important;
+
+}
+  
+ion-content{
+
+  --background:#fff url('../../../assets/images/tryyy.jpg') 0 0/100% 100% no-repeat;
+}
+
+ion-card{
+  
+  box-shadow: none !important;
+
+}
+
+ion-card-title{
+
+  --color:white;
+  text-align: center;
+
+}
+
+.text-block {
+
+  position: relative;
+  text-align: center;
+  color:white;
+
+}
+
+img{
+
+  max-width: 920px;
+  max-height: 280px;
+
+} 
+
+.calories{
+
+  text-align:center;
+  color:white;
+  font-weight: 200;
+
+}
+
+ion-button {
+
+  display:inline-block;
+  text-align: center;
+  width: 33%;
+  height: 55%;
+  padding-top: 3vh;
+  color:black;
+  --background:white;
+
+}
+
+form {
+
+  background:transparent;
+  margin-bottom: 32px;
+  button {
+    margin-top: 20px !important;
+  }
+}
+
+ion-item{
+
+  --background:transparent;
+
+}
+
+p {
+  font-size: 0.8em;
+  color: white;
+}
+
+ion-input {
+
+  --placeholder-color: white;
+  --placeholder-opacity: 1;
+  padding: 5px;
+  width:33%
+
+}
+
+.error-message {
+  min-height: 2.2rem;
+  p {
+    font-size: 60%;
+  }
+  ion-label {
+    margin: 2px 0;
+  }
+  .item-inner {
+    border-bottom: 0 !important;
+  }
+}

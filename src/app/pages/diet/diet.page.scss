@@ -1,0 +1,23 @@
+ion-toolbar {
+    
+    --background: transparent;
+    --ion-color-base: transparent !important;
+  
+  }
+    
+  ion-content{
+    --color:white;
+    --background:#fff url('../../../assets/images/dietPage.jpg') 0 0/100% 100% no-repeat;
+  }
+  
+  
+  ion-card-title{
+    color:white;
+    font-size:250%;
+    font-weight: 900;
+
+  }
+  ion-card-content{
+    color:white;
+    font-size:150%;
+  }

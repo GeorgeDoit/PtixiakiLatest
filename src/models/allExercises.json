@@ -1,0 +1,148 @@
+{
+    "warmup": [
+        {
+            "title": "JUMPING JACKS",
+            "content": "x30 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "PUSH UPS",
+            "content": "x10",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "15"
+        },
+        {
+            "title": "PLANK",
+            "content": "x30 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "20"
+        },
+        {
+            "title": "BURPEES",
+            "content": "x30 seconds",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "25"
+        },
+        {
+            "title": "SQUATS",
+            "content": "x15",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "30"
+        }
+    ],
+    "exercises": [
+        {
+            "title": "jab",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "straight right",
+            "content": "x15",
+            "explanation": "blah blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "left hook",
+            "content": "x15",
+            "explanation": "blah blah blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "right hook",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "left uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "double jab",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "straight right jab",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab right hook",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "straight right left hook",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right jab",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right jab straight right",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left hook",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "straight right jab right hook",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/sosto.gif",
+            "calories": "10"
+        }
+    ]
+}

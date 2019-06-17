@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>
+        {{ 'SETTINGS' | translate }}
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+ <ion-list>
+
+    <ion-list-header >General Settings</ion-list-header>
+
+    <ion-item>
+
+      <ion-label (click)="Reminder()">Remind me to train every day</ion-label>
+      <ion-icon slot="start" name="alarm"></ion-icon>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label (click)="restertProgress()">Restart progress</ion-label>
+      <ion-icon slot="start" name="refresh"></ion-icon>
+    </ion-item>
+    
+
+    <ion-list-header>SUPPORT US</ion-list-header>
+
+    <ion-item>
+      <ion-label (click)="rate()">Rate us</ion-label>
+      <ion-icon slot="start" name="star"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label (click)="share()">Share with friends</ion-label>
+      <ion-icon slot="start" name="share"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-label (click)="Privacy()">Privacy policy</ion-label>
+      <ion-icon slot="start" name="alert"></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
