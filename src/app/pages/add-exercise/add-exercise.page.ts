@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as lessons from "../../../models/allExercises.json";
 import { Router, NavigationExtras } from '@angular/router';
-import { ExerciseService } from 'src/app/services/exercise.service.js';
 
 
 @Component({
@@ -14,7 +13,7 @@ export class AddExercisePage implements OnInit {
 
   public exersices: any;
 
-  constructor(private router: Router, private exerciseService: ExerciseService) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
 

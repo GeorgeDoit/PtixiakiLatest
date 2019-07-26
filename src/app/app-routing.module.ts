@@ -1,8 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { AuthGuard } from "./services/auth.guard";
-import { ExerciseResolverService } from '../app/services/exercise-resolver.service';
-
 
 const routes: Routes = [
   { path: "", loadChildren: "./pages/tabs/tabs.module#TabsPageModule", canActivate: [AuthGuard] },
@@ -41,7 +39,7 @@ const routes: Routes = [
   { path: 'add-exercise', loadChildren: './pages/add-exercise/add-exercise.module#AddExercisePageModule' },
   { path: 'add-exercise/:id', loadChildren: './pages/add-exercise/add-exercise.module#AddExercisePageModule' },
   { path: 'add-exercise-item', loadChildren: './pages/add-exercise-item/add-exercise-item.module#AddExerciseItemPageModule' },
-  { path: 'add-exercise-item/:id', resolve: { test: ExerciseResolverService }, loadChildren: './pages/add-exercise-item/add-exercise-item.module#AddExerciseItemPageModule' },
+  { path: 'add-exercise-item/:id', loadChildren: './pages/add-exercise-item/add-exercise-item.module#AddExerciseItemPageModule' },
 
   { path: 'my-training', loadChildren: './pages/my-training/my-training.module#MyTrainingPageModule' },
   { path: 'my-training/:id', loadChildren: './pages/my-training/my-training.module#MyTrainingPageModule' },

@@ -71,7 +71,6 @@ export class ShowUsersTrainingEndPage implements OnInit {
           this.storedData = val;
 
           this.storedData = JSON.parse(this.storedData);
-          console.log(this.storedData);
 
           for (let i = 0; i < this.storedData.length; i++) {
 
