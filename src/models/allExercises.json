@@ -35,113 +35,155 @@
         {
             "title": "jab",
             "content": "x15",
-            "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "explanation": "Keep your right hand to your chin, try to give a push with your back leg, use your left shoulder to protect the left side of your chin. ",
+            "url": "../assets/gifs/1.gif",
             "calories": "10"
         },
         {
             "title": "straight right",
             "content": "x15",
             "explanation": "blah blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/2.gif",
             "calories": "10"
         },
         {
             "title": "left hook",
             "content": "x15",
             "explanation": "blah blah blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/3.gif",
             "calories": "10"
         },
         {
             "title": "right hook",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/4.gif",
             "calories": "10"
         },
         {
             "title": "left uppercut",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/5.gif",
             "calories": "10"
         },
         {
             "title": "right uppercut",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
-            "calories": "10"
-        },
-        {
-            "title": "double jab",
-            "content": "x15",
-            "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/6.gif",
             "calories": "10"
         },
         {
             "title": "jab straight right",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/12.gif",
             "calories": "10"
         },
         {
             "title": "straight right jab",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/123.gif",
             "calories": "10"
         },
         {
             "title": "jab right hook",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/1212.gif",
             "calories": "10"
         },
         {
             "title": "straight right left hook",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/1256.gif",
             "calories": "10"
         },
         {
             "title": "jab straight right jab",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/1-3-2.gif",
             "calories": "10"
         },
         {
             "title": "jab straight right jab straight right",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/1-6-3-2.gif",
             "calories": "10"
         },
         {
             "title": "jab straight right left hook",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/2-5-2-3.gif",
             "calories": "10"
         },
         {
             "title": "straight right jab right hook",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/1 2katw 3panw.gif",
             "calories": "10"
         },
         {
             "title": "jab straight right left uppercut right uppercut",
             "content": "x15",
             "explanation": "blah blah",
-            "url": "../assets/gifs/sosto.gif",
+            "url": "../assets/gifs/1 spa 3 roll.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/1 vima 3 vima 2.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/1-2-spasimo2.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/1-2 spasimo 2 3 6.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/advanced1.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/advanced1.gif",
+            "calories": "10"
+        },
+        {
+            "title": "One, Two, defence left and right, three and four",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/amines.gif",
+            "calories": "10"
+        },
+        {
+            "title": "jab straight right left uppercut right uppercut",
+            "content": "x15",
+            "explanation": "blah blah",
+            "url": "../assets/gifs/mayweather.gif",
             "calories": "10"
         }
     ]

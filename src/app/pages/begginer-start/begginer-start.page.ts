@@ -1,10 +1,10 @@
-import { Component, OnInit } from "@angular/core";
-import * as lessons from "../../../models/begginer.json";
-import { AlertController, NavController } from "@ionic/angular";
-import { Router, ActivatedRoute } from "@angular/router";
-import { DataService } from "src/app/services/data.service.js";
-import { formatDate } from "@angular/common";
-import { AngularFireAuth } from "@angular/fire/auth";
+import { Component, OnInit } from '@angular/core';
+import * as lessons from '../../../models/begginer.json';
+import { AlertController, NavController } from '@ionic/angular';
+import { Router, ActivatedRoute } from '@angular/router';
+import { DataService } from 'src/app/services/data.service.js';
+import { formatDate } from '@angular/common';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-begginer-start',
@@ -24,7 +24,7 @@ export class BegginerStartPage implements OnInit {
   test: any;
 
   today = new Date();
-  jstoday = "";
+  jstoday = '';
 
   FullWork = [];
 
@@ -55,7 +55,7 @@ export class BegginerStartPage implements OnInit {
       }
     });
 
-    this.lessonId = this.route.snapshot.paramMap.get("id");
+    this.lessonId = this.route.snapshot.paramMap.get('id');
 
     this.test = this.router.url;
 
@@ -75,23 +75,23 @@ export class BegginerStartPage implements OnInit {
 
     console.log(this.FullWork);
     this.noOfItem = 1;
-    this.jstoday = formatDate(this.today, "dd-MM", "en-US", "+0530");
+    this.jstoday = formatDate(this.today, 'dd-MM', 'en-US', '+0530');
   }
 
   async Quit() {
     const alert = await this.alertController.create({
-      header: "DONT QUIT! FEELING TIRED MEANS ITS WORKING!",
+      header: 'DONT QUIT! FEELING TIRED MEANS ITS WORKING!',
       buttons: [
         {
-          text: "Quit",
+          text: 'Quit',
           handler: () => {
-            this.navCtrl.navigateBack("tabs/home");
+            this.navCtrl.navigateBack('tabs/home');
           }
         },
         {
-          text: "Continue",
+          text: 'Continue',
           handler: () => {
-            console.log("Confirm Continue");
+            console.log('Confirm Continue');
           }
         }
       ]
@@ -103,10 +103,10 @@ export class BegginerStartPage implements OnInit {
   async Finish() {
 
     const alert = await this.alertController.create({
-      header: "Congrats.You finished your boxing lesson!",
+      header: 'Congrats.You finished your boxing lesson!',
       buttons: [
         {
-          text: "Continue",
+          text: 'Continue',
           handler: () => {
 
             let lessonId = 'begginer-end/' + this.lessonId;
@@ -116,7 +116,7 @@ export class BegginerStartPage implements OnInit {
         }
       ],
       backdropDismiss: false,
-      cssClass: "my-custom-class"
+      cssClass: 'my-custom-class'
     });
 
     await alert.present();
@@ -127,6 +127,7 @@ export class BegginerStartPage implements OnInit {
   }
 
   async done(calories) {
+
     var x = +calories;
 
     this.burned += x;

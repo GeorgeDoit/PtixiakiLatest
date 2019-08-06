@@ -1,9 +1,9 @@
 
-import { ActivatedRoute, Router } from "@angular/router";
-import { Component, OnInit } from "@angular/core";
-import { AlertController, NavController } from "@ionic/angular";
-import { Storage } from "@ionic/storage";
-import * as lessons from "../../../models/begginer.json";
+import { ActivatedRoute, Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { AlertController, NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
+import * as lessons from '../../../models/begginer.json';
 
 @Component({
   selector: 'app-begginer',
@@ -31,11 +31,12 @@ export class BegginerPage implements OnInit {
 
   ngOnInit() {
 
-    this.lessonId = this.route.snapshot.paramMap.get("id");
+    this.lessonId = this.route.snapshot.paramMap.get('id');
 
     this.warmup = lessons.warmup;
     this.exersices = lessons.exercises;
 
+    // tslint:disable-next-line: forin
     for (let i in this.warmup) {
 
       this.warmupUrls[i] = lessons.warmup[i].url;
@@ -46,9 +47,9 @@ export class BegginerPage implements OnInit {
 
   async presentAlert(message: string) {
     const alert = await this.alertController.create({
-      header: "Alert",
+      header: 'Alert',
       subHeader: message,
-      buttons: ["OK"]
+      buttons: ['OK']
     });
 
     await alert.present();
@@ -59,7 +60,7 @@ export class BegginerPage implements OnInit {
   }
 
   StartExercising() {
-    let lesson = "begginer-start/" + this.lessonId;
+    let lesson = 'begginer-start/' + this.lessonId;
     this.router.navigateByUrl(lesson);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as lessons from "../../../models/allExercises.json";
+import * as lessons from '../../../models/allExercises.json';
 import { Router, NavigationExtras } from '@angular/router';
 
 
@@ -21,7 +21,7 @@ export class AddExercisePage implements OnInit {
 
   }
 
-  test(exercise) {
+  AddItem(exercise) {
 
     let navigationExtras: NavigationExtras = {
       queryParams: {

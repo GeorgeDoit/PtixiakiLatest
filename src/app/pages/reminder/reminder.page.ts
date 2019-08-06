@@ -126,32 +126,28 @@ export class ReminderPage implements OnInit {
 
     let UidReminder = this.Uid + '/Reminders';
     this.dataService.deleteReminder(UidReminder, this.timerTable);
-    let i = 0;
+    let i = 1;
 
     var hs = timer.time.slice(0, 2);
     var mins = timer.time.slice(3, 5);
     var hours = +hs;
-    console.log(hours);
     var minutes = +mins;
 
 
-    if (timer.toggle == true) {
+    var displayDate = new Date();
+    displayDate.setHours(hours);
+    displayDate.setMinutes(minutes);
 
+    if (timer.toggle === true) {
+
+      console.log(timer.toggle);
       this.localNotifications.schedule({
+
         id: i,
-        title: 'Hey',
+        title: 'Hey1',
         text: "Time to train again!",
-        trigger: {
 
-          every: {
-            hour: hours,
-            minute: minutes
-          }
-
-        },
-        led: 'FF0000',
-        sound: 'file://assets/audio/message.mp3',
-        foreground: true
+        trigger: { firstAt: displayDate, every: { hour: hours, minute: minutes } }
       });
     }
 

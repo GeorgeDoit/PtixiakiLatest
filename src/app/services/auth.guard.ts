@@ -22,12 +22,13 @@ export class AuthGuard implements CanActivate {
 
     const alert = await this.alertController.create({
       header: 'Alert',
-      subHeader: 'Access denied',
+      subHeader: 'You need to login to continue',
       buttons: ['OK']
     });
 
     await alert.present();
   }
+
   canActivate(
 
     next: ActivatedRouteSnapshot,
@@ -39,6 +40,7 @@ export class AuthGuard implements CanActivate {
       tap(loggedIn => {
         if (!loggedIn) {
 
+          this.presentAlert();
           this.router.navigate(['/login']);
         }
       })

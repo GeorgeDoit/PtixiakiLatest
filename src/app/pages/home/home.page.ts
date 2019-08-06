@@ -1,17 +1,17 @@
-import { Component, OnInit } from "@angular/core";
-import { Router, ActivatedRoute, NavigationExtras } from "@angular/router";
-import { Network } from "@ionic-native/network/ngx";
-import { Auth2Service } from "src/app/services/auth2.service";
-import { Storage } from "@ionic/storage";
-import { AngularFireAuth } from "@angular/fire/auth";
-import { AlertController, ToastController } from "@ionic/angular";
-import { DataService } from "src/app/services/data.service.js";
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationExtras } from '@angular/router';
+import { Network } from '@ionic-native/network/ngx';
+import { Auth2Service } from 'src/app/services/auth2.service';
+import { Storage } from '@ionic/storage';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { AlertController, ToastController } from '@ionic/angular';
+import { DataService } from 'src/app/services/data.service.js';
 
 
 @Component({
-  selector: "app-home",
-  templateUrl: "./home.page.html",
-  styleUrls: ["./home.page.scss"],
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
 })
 
 export class HomePage implements OnInit {
@@ -42,8 +42,6 @@ export class HomePage implements OnInit {
 
   private UidTraining: string;
 
-  private UserTraining: string;
-
   private UidPlanId: string;
 
   public val: any;
@@ -54,6 +52,9 @@ export class HomePage implements OnInit {
 
   CustomUserTrainings = [];
   CustomUserTrainings2 = [];
+
+  lessonPicked: number;
+  NavigateTo: string;
 
   slideOpts = {
     slidesPerView: 1,
@@ -66,26 +67,25 @@ export class HomePage implements OnInit {
   slides: any = [
     {
       img: '../../assets/images/test4.jpg',
-      title: "begginer"
+      title: 'begginer'
     },
     {
       img: '../../assets/images/test3.jpg',
-      title: "intermediate"
+      title: 'intermediate'
     },
     {
       img: '../../assets/images/test2.jpg',
-      title: "advanced"
+      title: 'advanced'
     },
     {
       img: '../../assets/images/test.jpg',
-      title: "My Training"
+      title: 'My Training'
     }
-  ]
+  ];
 
   constructor(
 
     private router: Router,
-    private route: ActivatedRoute,
     private network: Network,
     public authServ: Auth2Service,
     private storage: Storage,
@@ -98,20 +98,16 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
 
-
     this.dataService.watchStorage().subscribe((data: string) => {
+
       this.AdvancedLessons = [];
       this.BegginerLessons = [];
       this.IntermediateLessons = [];
       this.CustomUserTrainings2 = [];
 
-      console.log('im called');
-
-      if (data == 'changed') {
-
+      if (data === 'changed') {
         this.checkForUser();
         this.checkForPlan();
-
       }
     });
 
@@ -119,27 +115,17 @@ export class HomePage implements OnInit {
     this.checkForPlan();
 
     this.network.onConnect().subscribe(
-      data => {
-        console.log(data);
-      },
-      error => console.log(error)
+      data => { console.log(data); }, error => console.log(error)
     );
 
     this.network.onDisconnect().subscribe(
-      data => {
-        console.log(data);
-      },
-      error => console.log(error)
+      data => { console.log(data); }, error => console.log(error)
     );
-
   }
 
-  dayPicked: number;
-  NavigateTo: string;
+  async navigateTo(lessonPicked, Navigation) {
 
-  async navigateTo(dayPicked, Navigation) {
-
-    this.NavigateTo = Navigation + '/' + dayPicked;
+    this.NavigateTo = Navigation + '/' + lessonPicked;
 
     this.router.navigateByUrl(this.NavigateTo);
 
@@ -147,20 +133,16 @@ export class HomePage implements OnInit {
 
   addExersice() {
 
-    this.router.navigateByUrl("add-exercise");
+    this.router.navigateByUrl('add-exercise');
 
   }
 
   checkForPlan() {
 
     this.afAuth.authState.subscribe(async user => {
-
       if (user) {
-
         this.Uid = user.uid;
-
         this.UidTraining = this.Uid + '/Plan';
-
         await this.storage.get(this.UidTraining).then((val) => {
 
           this.customTrainingData = JSON.parse(val);
@@ -168,9 +150,8 @@ export class HomePage implements OnInit {
           if (this.customTrainingData != null) {
 
             this.dataService.deleteTrainingId(this.UidTraining);
-
             this.CustomUserTrainings = this.customTrainingData;
-
+            console.log(this.CustomUserTrainings);
             this.customTrainingDataId = this.customTrainingData['id'];
 
             this.UidPlanId = this.Uid + '/' + this.customTrainingDataId;
@@ -180,14 +161,10 @@ export class HomePage implements OnInit {
             this.dataService.deleteData(this.UidPlanId);
 
             if (this.CustomUserTrainings != null) {
-
               this.UidTrainings = this.Uid + '/UserTrainings'
               this.dataService.saveTrainings(this.UidTrainings, this.CustomUserTrainings);
-
             }
-
           }
-
         });
 
         this.UidTrainings = this.Uid + '/UserTrainings';
@@ -199,7 +176,6 @@ export class HomePage implements OnInit {
           if (this.customTrainingData != null) {
 
             this.CustomUserTrainings2 = this.customTrainingData;
-
           }
 
         });
@@ -229,8 +205,6 @@ export class HomePage implements OnInit {
         this.storage.get(UidBegginer).then((val) => {
 
           this.lessonFinished = JSON.parse(val);
-
-          // this.dayFinished = Object.keys(this.dayFinished).map(key => ({ type: key, value: this.dayFinished[key] }));
 
           for (var i = this.firstDay; i <= this.lastDay; i++) {
 
@@ -321,9 +295,6 @@ export class HomePage implements OnInit {
     this.CustomUserTrainings2 = this.CustomUserTrainings2.filter(x => x.id !== e['id']);
 
     this.dataService.setTrainingsData(this.Uid + '/UserTrainings', this.CustomUserTrainings2);
-    // this.dataService.deleteData(this.Uid + '/UserTrainings');
-
-    // this.dataService.deletePlan((this.Uid + '/UserTrainings'), this.CustomUserTrainings2);
 
   }
 

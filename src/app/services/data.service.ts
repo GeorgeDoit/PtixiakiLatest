@@ -1,9 +1,9 @@
-import { Injectable } from "@angular/core";
-import { Storage } from "@ionic/storage";
-import { Subject, Observable } from "rxjs";
+import { Injectable } from '@angular/core';
+import { Storage } from '@ionic/storage';
+import { Subject, Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class DataService {
 
@@ -11,17 +11,11 @@ export class DataService {
   public ChartTableB = [];
   public ChartTableI = [];
   public ChartTableA = [];
-
   public WeightTable = [];
-
   public TrainingTable = [];
-
   public Trainings = [];
-
   public RemindersTable = [];
-
   public StoredData: any;
-
   public TrainingData: any;
 
   public storageSub = new Subject<string>();
@@ -29,35 +23,29 @@ export class DataService {
   public storageSub3 = new Subject<string>();
   public storageSub4 = new Subject<string>();
 
-
   constructor(private storage: Storage) { }
 
   watchStorage(): Observable<any> {
-
     return this.storageSub.asObservable();
-
   }
+
   watchStorageNo2(): Observable<any> {
-
     return this.storageSub2.asObservable();
-
   }
+
   watchStorageNo3(): Observable<any> {
-
     return this.storageSub3.asObservable();
-
   }
+
   watchStorageNo4(): Observable<any> {
-
     return this.storageSub4.asObservable();
-
   }
 
   async setData(Uid, data) {
 
     this.data[Uid] = data;
-    var weightString = "weight";
-    var myTrainingString = "Training";
+    var weightString = 'weight';
+    var myTrainingString = 'Training';
     var PlanString = 'Plan';
     var ReminderString = 'Reminder';
 
@@ -81,7 +69,6 @@ export class DataService {
 
       this.saveCaloriesChartData(Uid, this.data[Uid]);
     }
-
   }
 
   setCustomPlanData(Uid, data) {
@@ -101,61 +88,39 @@ export class DataService {
     var begginer = 'begginer'
     var advanced = 'advanced'
 
-
     this.storage.get(Uid).then((val) => {
-
       if (val != null) {
-
         this.StoredData = val;
-
         this.StoredData = JSON.parse(this.StoredData);
-
         this.StoredData.push(data);
-
         // // Need to stringify to work
         this.storage.set(Uid, JSON.stringify(this.StoredData));
         this.storageSub.next('changed');
         this.storageSub3.next('profile');
-
-
       } else if (Uid.includes(begginer)) {
         this.ChartTableB.push(data);
-
         // // Need to stringify to work
         this.storage.set(Uid, JSON.stringify(this.ChartTableB));
         this.storageSub.next('changed');
         this.storageSub3.next('profile');
-
       } else if (Uid.includes(intermediate)) {
-
         this.ChartTableI.push(data);
-
         // // Need to stringify to work
         this.storage.set(Uid, JSON.stringify(this.ChartTableI));
         this.storageSub.next('changed');
         this.storageSub3.next('profile');
-
       } else if (Uid.includes(advanced)) {
-
         this.ChartTableA.push(data);
-
         // // Need to stringify to work
         this.storage.set(Uid, JSON.stringify(this.ChartTableA));
         this.storageSub.next('changed');
         this.storageSub3.next('profile');
       } else {
-
         this.ChartTableB.push(data);
         this.storageSub.next('changed');
-
         this.storageSub3.next('profile');
       }
-
     });
-
-    // this.storageSub.next('changed');
-
-
   }
 
   saveWeightChartData(Uid, data) {
@@ -239,6 +204,8 @@ export class DataService {
         this.StoredData = JSON.parse(this.StoredData);
 
         this.StoredData.push(data);
+
+        console.log(this.StoredData);
 
         // // Need to stringify to work
         this.storage.set(Uid, JSON.stringify(this.StoredData));
