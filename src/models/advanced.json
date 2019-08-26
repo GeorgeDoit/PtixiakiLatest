@@ -3,30 +3,35 @@
         {
             "title": " Jumping Rope",
             "content": "1 minute",
+            "explanation": "jump and move your hands like you would do with a rope",
             "url": "../assets/gifs/sxinaki.gif",
             "calories": "20"
         },
         {
             "title": "PUSH UPS",
             "content": "x15",
+            "explanation": "sraight your mack but carefull, dont put your weight on your back",
             "url": "../assets/gifs/pushup.gif",
             "calories": "5.1"
         },
         {
             "title": "PLANK",
             "content": "x60 seconds",
+            "explanation": "keep a straight stance",
             "url": "../assets/gifs/plank.gif",
             "calories": "3"
         },
         {
             "title": "BURPEES",
             "content": "x60 seconds ",
+            "explanation": "do a squat , then on a plank stance then up and jump",
             "url": "../assets/gifs/burpee.gif",
             "calories": "8"
         },
         {
             "title": "SQUATS",
             "content": "x60 seconds",
+            "explanation": "watch your knees have to be behince your foot fingers",
             "url": "../assets/gifs/squat.gif",
             "calories": "10.1"
         }
@@ -35,56 +40,56 @@
         {
             "title": "jab -straight right -left hook -roll",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/amines.gif",
             "calories": "3.45"
         },
         {
             "title": "straight right -jab -right hook -roll",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Combine them so the opponent wont see the punches coming. Roll to evade the oponents anser",
             "url": "../assets/gifs/advanced1.gif",
             "calories": "3.45"
         },
         {
             "title": "jab -straight right -slip -straight right",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Slip to evade the oponents anser and get some weight on your punch. Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/fake panw 2 katw 3 paw roll.gif",
             "calories": "3.45"
         },
         {
             "title": "jab -straight right -slip -straight right -roll",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch.  Slip and Roll to evade the oponents anser and get some weight on your punch.Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/1 vima 3 vima 2.gif",
             "calories": "3.45"
         },
         {
             "title": "jab -straight right -slip -straight right -roll -straight right",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/1 spa 3 roll.gif",
             "calories": "3.45"
         },
         {
             "title": "jab -straight right -slip -straight right -left hook",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/fake 2 jab.gif",
             "calories": "3.45"
         },
         {
             "title": "jab -straight right -slip -straight right -left hook -roll",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/fake1 2 pamnw.gif",
             "calories": "3.45"
         },
         {
             "title": "jab -straight right -left hook -roll -roll -straight right",
             "content": "x30 seconds",
-            "explanation": "blah blah",
+            "explanation": "COver the straight punc with your soulder. Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/mayweather.gif",
             "calories": "3.45"
         }

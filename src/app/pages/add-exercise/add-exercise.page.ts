@@ -17,8 +17,13 @@ export class AddExercisePage implements OnInit {
 
   ngOnInit() {
 
-    this.exersices = lessons.exercises;
+    this.exersices = lessons.warmup;
+    for (let i = 0; i < lessons.exercises.length; i++) {
 
+      this.exersices.push(lessons.exercises[i]);
+
+    }
+    console.log(this.exersices);
   }
 
   AddItem(exercise) {

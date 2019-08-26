@@ -3,30 +3,35 @@
         {
             "title": " Jumping Rope",
             "content": "2 minutes",
+            "explanation": "jump and move your hands like you would do with a rope",
             "url": "../assets/gifs/sxinaki.gif",
             "calories": "40"
         },
         {
             "title": "PUSH UPS",
             "content": "x5",
+            "explanation": "sraight your mack but carefull, dont put your weight on your back",
             "url": "../assets/gifs/pushup.gif",
             "calories": "1.8"
         },
         {
             "title": "PLANK",
             "content": "x30 seconds",
+            "explanation": "keep a straight stance",
             "url": "../assets/gifs/plank.gif",
             "calories": "1.5"
         },
         {
             "title": "BURPEES",
             "content": "x30 seconds ",
+            "explanation": "do a squat , then on a plank stance then up and jump",
             "url": "../assets/gifs/burpee.gif",
             "calories": "4"
         },
         {
             "title": "SQUATS",
             "content": "x30 seconds",
+            "explanation": "watch your knees have to be behince your foot fingers",
             "url": "../assets/gifs/squat.gif",
             "calories": "5.1"
         }
@@ -35,63 +40,63 @@
         {
             "title": "jab",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch",
             "url": "../assets/gifs/1.gif",
             "calories": "1.7"
         },
         {
             "title": "straight right",
             "content": "x15 seconds",
-            "explanation": "blah blah blah",
+            "explanation": "Use ur shoulder to cover your face and put some weight on your punch",
             "url": "../assets/gifs/2.gif",
             "calories": "1.7"
         },
         {
             "title": "left hook",
             "content": "x15 seconds",
-            "explanation": "blah blah blah blah",
+            "explanation": "move your hips, cover your chin with the other hand",
             "url": "../assets/gifs/3.gif",
             "calories": "1.7"
         },
         {
             "title": "right hook",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "move your hips, cover your chin with the other hand",
             "url": "../assets/gifs/4.gif",
             "calories": "1.7"
         },
         {
             "title": "left uppercut",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "move your hips, cover your chin with the other hand",
             "url": "../assets/gifs/5.gif",
             "calories": "1.7"
         },
         {
             "title": "right uppercut",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "move your hips, cover your chin with the other hand",
             "url": "../assets/gifs/6.gif",
             "calories": "1.7"
         },
         {
             "title": "jab -straight right",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "make it sound like one punch",
             "url": "../assets/gifs/12.gif",
             "calories": "1.7"
         },
         {
             "title": "jab, straight right, left hook, right hook, left uppercut, right uppercut",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "make all the moves together slowly, move your hips and your feet",
             "url": "../assets/gifs/olla.gif",
             "calories": "1.7"
         },
         {
             "title": "jab, straight right, left uppercut, right uppercut",
             "content": "x15 seconds",
-            "explanation": "blah blah",
+            "explanation": "Combine them so the opponent wont see the punches coming",
             "url": "../assets/gifs/1-2-5-6.gif",
             "calories": "1.7"
         }
