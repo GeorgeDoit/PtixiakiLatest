@@ -3,35 +3,35 @@
         {
             "title": " Jumping Rope",
             "content": "3 minutes",
-            "explanation": "jump and move your hands like you would do with a rope",
+            "explanation": "Jump and move your hands like you would do with a rope",
             "url": "../assets/gifs/sxinaki.gif",
             "calories": "60"
         },
         {
             "title": "PUSH UPS",
             "content": "x10",
-            "explanation": "sraight your mack but carefull, dont put your weight on your back",
+            "explanation": "Straight your back but carefull, dont put your weight on your back",
             "url": "../assets/gifs/pushup.gif",
             "calories": "3.3"
         },
         {
             "title": "PLANK",
             "content": "x45 seconds",
-            "explanation": "keep a straight stance",
+            "explanation": "Keep a straight stance",
             "url": "../assets/gifs/plank.gif",
             "calories": "2.3"
         },
         {
             "title": "BURPEES",
             "content": "x45 seconds ",
-            "explanation": "do a squat , then on a plank stance then up and jump",
+            "explanation": "Do a squat , then on a plank stance then up and jump",
             "url": "../assets/gifs/burpee.gif",
             "calories": "6"
         },
         {
             "title": "SQUATS",
             "content": "x45 seconds",
-            "explanation": "watch your knees have to be behince your foot fingers",
+            "explanation": "Watch your knees have to be behince your foot fingers",
             "url": "../assets/gifs/squat.gif",
             "calories": "7.5"
         }

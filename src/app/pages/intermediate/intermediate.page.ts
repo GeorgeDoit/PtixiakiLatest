@@ -43,9 +43,9 @@ export class IntermediatePage implements OnInit {
 
   }
 
-  async presentAlert(message: string) {
+  async presentAlert(title: string, message: string) {
     const alert = await this.alertController.create({
-      header: "Alert",
+      header: title,
       subHeader: message,
       buttons: ["OK"]
     });
@@ -54,7 +54,7 @@ export class IntermediatePage implements OnInit {
   }
 
   Explanation(exersice) {
-    this.presentAlert(exersice.explanation);
+    this.presentAlert(exersice.title, exersice.explanation);
   }
 
   StartExercising() {

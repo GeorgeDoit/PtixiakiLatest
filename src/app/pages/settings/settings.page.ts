@@ -40,9 +40,7 @@ export class SettingsPage implements OnInit {
   ngOnInit() {
 
     this.afAuth.authState.subscribe(user => {
-
       if (user) {
-
         this.Uid = user.uid;
         this.UidWeight = user.uid + '/weight';
         this.UidBegginer = user.uid + '/begginer';
@@ -52,6 +50,31 @@ export class SettingsPage implements OnInit {
         this.keysToRemove = [this.Uid, this.UidWeight, this.UidBegginer, this.UidIntermediate, this.UidAdvanced];
       }
     });
+  }
+
+  async Reset() {
+    const alert = await this.alertController.create({
+      header: 'Are you sure you want to restart your progress?',
+      buttons: [
+        { text: 'Cancel' },
+        {
+          text: 'Continue',
+
+          handler: () => {
+            for (let key of this.keysToRemove) {
+              this.dataService.deleteData(key);
+            }
+            setTimeout(() => { this.windowReload(); }, 1000);
+          }
+        }
+      ],
+      backdropDismiss: false,
+    });
+    await alert.present();
+  }
+
+  async windowReload() {
+    await window.location.reload();
   }
 
   rate() {
@@ -81,36 +104,6 @@ export class SettingsPage implements OnInit {
     this.navCtrl.navigateForward('tabs/home');
   }
 
-  async Reset() {
-    const alert = await this.alertController.create({
-      header: 'Are you sure you want to restart your progress?',
-      buttons: [
-        {
-          text: 'Cancel',
-        },
-        {
-          text: 'Continue',
-          handler: () => {
 
-            for (let key of this.keysToRemove) {
-
-              this.dataService.deleteData(key);
-
-            }
-            setTimeout(() => { this.windowReload(); }, 1000);
-
-          }
-        }
-      ],
-      backdropDismiss: false,
-
-    });
-
-    await alert.present();
-  }
-
-  async windowReload() {
-    await window.location.reload();
-  }
 
 }
