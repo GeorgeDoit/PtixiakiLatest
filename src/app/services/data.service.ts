@@ -205,8 +205,6 @@ export class DataService {
 
         this.StoredData.push(data);
 
-        console.log(this.StoredData);
-
         // // Need to stringify to work
         this.storage.set(Uid, JSON.stringify(this.StoredData));
         // this.storageSub.next('changed');
@@ -265,7 +263,6 @@ export class DataService {
 
   async deleteData(key) {
 
-    console.log('delete ' + key);
     this.storage.remove(key);
     await this.storageSub.next('changed');
   }

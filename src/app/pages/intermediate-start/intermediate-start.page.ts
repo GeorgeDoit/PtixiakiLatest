@@ -89,7 +89,6 @@ export class IntermediateStartPage implements OnInit {
         {
           text: "Continue",
           handler: () => {
-            console.log("Confirm Continue");
           }
         }
       ]

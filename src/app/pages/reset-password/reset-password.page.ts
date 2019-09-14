@@ -16,24 +16,24 @@ export class ResetPasswordPage implements OnInit {
 
   constructor(
     public navCtrl: NavController,
-    public auth:Auth2Service,
+    public auth: Auth2Service,
     public alertCtrl: AlertController,
     formBuilder: FormBuilder
 
 
-    ) { 
-      this.resetPasswordForm = formBuilder.group({
-        email: [
-          "",
-          Validators.compose([Validators.required, EmailValidator.isValid])
-        ]
-      });
-    }
+  ) {
+    this.resetPasswordForm = formBuilder.group({
+      email: [
+        "",
+        Validators.compose([Validators.required, EmailValidator.isValid])
+      ]
+    });
+  }
 
   ngOnInit() {
   }
 
-  async presentAlert(message:string) {
+  async presentAlert(message: string) {
 
     const alert = await this.alertCtrl.create({
       header: 'Alert',
@@ -46,9 +46,7 @@ export class ResetPasswordPage implements OnInit {
 
   resetPassword(): void {
     if (!this.resetPasswordForm.valid) {
-      console.log(
-        `Form is not valid yet, current value: ${this.resetPasswordForm.value}`
-      );
+
     } else {
       const email: string = this.resetPasswordForm.value.email;
       this.auth.resetPassword(email).then(

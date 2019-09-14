@@ -73,7 +73,6 @@ export class BegginerStartPage implements OnInit {
       this.FullWork.push(this.exersices[i]);
     }
 
-    console.log(this.FullWork);
     this.noOfItem = 1;
     this.jstoday = formatDate(this.today, 'dd-MM', 'en-US', '+0530');
   }
@@ -91,7 +90,6 @@ export class BegginerStartPage implements OnInit {
         {
           text: 'Continue',
           handler: () => {
-            console.log('Confirm Continue');
           }
         }
       ]

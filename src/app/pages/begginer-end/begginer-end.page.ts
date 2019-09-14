@@ -97,9 +97,6 @@ export class BegginerEndPage implements OnInit {
 
     if (!this.weightForm.valid) {
 
-      console.log(
-        `Form is not valid yet, current value: ${this.weightForm.value}`
-      );
 
     } else {
       this.submitted = true;

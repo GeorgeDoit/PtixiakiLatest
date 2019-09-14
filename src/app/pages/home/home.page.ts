@@ -151,7 +151,6 @@ export class HomePage implements OnInit {
 
             this.dataService.deleteTrainingId(this.UidTraining);
             this.CustomUserTrainings = this.customTrainingData;
-            console.log(this.CustomUserTrainings);
             this.customTrainingDataId = this.customTrainingData['id'];
 
             this.UidPlanId = this.Uid + '/' + this.customTrainingDataId;

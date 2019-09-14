@@ -69,7 +69,6 @@ export class ShowUsersTrainingPage implements OnInit {
         {
           text: "Continue",
           handler: () => {
-            console.log("Confirm Continue");
           }
         }
       ]

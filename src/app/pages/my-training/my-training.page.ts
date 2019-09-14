@@ -36,7 +36,6 @@ export class MyTrainingPage implements OnInit {
     this.dataService.watchStorageNo2().subscribe((data: string) => {
 
       if (data === 'test') {
-        console.log('Observable called from MyTraining');
         this.getTrainingData();
       }
     });
@@ -51,9 +50,10 @@ export class MyTrainingPage implements OnInit {
         this.UidTraining = this.Uid + '/My-Training';
         await this.storage.get(this.UidTraining).then((val) => {
           if (val != null) {
+
             this.exercise = val;
+
             this.exercise = JSON.parse(this.exercise);
-            console.log(this.exercise);
           }
         });
       }
@@ -85,14 +85,19 @@ export class MyTrainingPage implements OnInit {
         text: 'Ok',
         handler: (inputData) => {
           this.training = inputData.training;
-          console.log(this.training);
 
           this.UidPlan = this.Uid + '/Plan';
+
           this.test.id = this.training;
+
           this.test.data = this.exercise;
+
           this.dataService.setData(this.UidPlan, this.test);
+
           this.UidTraining = this.Uid + '/My-Training';
+
           this.dataService.deleteTestData(this.UidTraining);
+
           let navigationExtras: NavigationExtras = {
             queryParams: {
               CustomTraining: this.training

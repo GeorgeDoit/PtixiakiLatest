@@ -78,7 +78,6 @@ export class SettingsPage implements OnInit {
   }
 
   rate() {
-    console.log('rate')
   }
 
   Reminder() {
@@ -92,11 +91,9 @@ export class SettingsPage implements OnInit {
   }
 
   share() {
-    console.log("share");
   }
 
   Privacy() {
-    console.log('clicked')
     this.navCtrl.navigateForward('privacy');
   }
 

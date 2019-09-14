@@ -140,7 +140,6 @@ export class ReminderPage implements OnInit {
 
     if (timer.toggle === true) {
 
-      console.log(timer.toggle);
       this.localNotifications.schedule({
 
         id: i,

@@ -23,7 +23,6 @@ export class AddExercisePage implements OnInit {
       this.exersices.push(lessons.exercises[i]);
 
     }
-    console.log(this.exersices);
   }
 
   AddItem(exercise) {
