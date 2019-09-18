@@ -70,6 +70,7 @@ export class LoginPage implements OnInit {
 
       this.auth.loginUser(email, password).then(
         authData => {
+          setTimeout(() => { this.windowReload(); }, 1000);
           this.router.navigate(["tabs/home"]);
         },
         error => {
@@ -77,5 +78,9 @@ export class LoginPage implements OnInit {
         }
       );
     }
+  }
+
+  async windowReload() {
+    await window.location.reload();
   }
 }
