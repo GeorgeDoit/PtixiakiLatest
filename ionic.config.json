@@ -1,0 +1,8 @@
+{
+  "name": "tst",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

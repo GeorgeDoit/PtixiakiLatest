@@ -1,0 +1,27 @@
+ion-card{
+    --background:white;
+    height:100px;
+}
+
+ion-content{
+    --background:#fff url('../../../assets/images/remind.jpg') 0 0/100% 100% no-repeat;
+  }
+
+
+.test{
+    position: absolute;
+    right: 2%;
+    width:25px;
+    height:25px;
+}
+
+.add{
+    position: absolute;
+    right: 2%;
+    width:65px;
+    height:65px;
+}
+
+ion-toggle{
+    --background:black;
+}

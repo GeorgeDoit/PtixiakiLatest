@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title >LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style='background-image: url("../../assets/gloves.jpg") !important;' padding>
+    
+  <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input formControlName="email" type="email" 
+      placeholder="Your email address" 
+      [class.invalid]="!loginForm.controls.email.valid">
+      </ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!loginForm.controls.email.valid">
+      <p>Please enter a valid email address.</p>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input formControlName="password" type="password" 
+      placeholder="Your password" 
+      [class.invalid]="!loginForm.controls.password.valid">
+      </ion-input>
+    </ion-item>
+    <ion-item class="error-message" *ngIf="!loginForm.controls.password.valid">
+      <p>Your password needs more than 6 characters.</p>
+    </ion-item>
+  
+    <ion-button class="Login" expand="block" type="submit" [disabled]="!loginForm.valid">Log In</ion-button>
+
+  </form>
+
+  <ion-button class="signUp" expand="block" (click)="goToSignup()">Create a new account</ion-button>
+  
+  <ion-button class="Forgot" expand="block" (click)="goToResetPassword()">I forgot my password 🙁</ion-button>
+    
+</ion-content>

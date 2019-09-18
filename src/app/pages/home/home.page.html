@@ -1,0 +1,82 @@
+<ion-header >
+    <ion-toolbar >
+      <ion-title>HOME</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+    <ion-slides pager="true" [options]="slideOpts">
+
+      <ion-slide *ngFor = "let slide of slides">
+
+        <div class = "slide-img-padding">
+            <img [src]="slide.img">
+        </div>
+        <div>
+            <h3>
+              {{slide.title}}
+            </h3>
+        </div>
+
+        <div *ngIf="slide.title == 'begginer'">
+
+          <div *ngFor="let lesson of BegginerLessons let i=index">
+            <ion-button id={{lesson.lessonID}} expand="block" size="large" (click)="navigateTo(lesson.lessonID,slide.title)" ngDefaultControl [(ngModel)]="BegginerLessons" disabled = {{lesson.disabled}} >Lesson {{lesson.lessonID}} 
+                <div *ngIf="lesson.disabled == true;">
+                  <ion-icon slot="end" name="checkmark-circle"></ion-icon>
+                </div>
+            </ion-button>
+          </div>
+          
+        </div>
+        <div *ngIf="slide.title == 'intermediate'">
+
+          <div *ngFor="let lesson of IntermediateLessons let i=index">
+            <ion-button id={{lesson.lessonID}} expand="block" size="large" (click)="navigateTo(lesson.lessonID,slide.title)" ngDefaultControl [(ngModel)]="IntermediateLessons" disabled = {{lesson.disabled}} >Lesson {{lesson.lessonID}} 
+                <div *ngIf="lesson.disabled == true;">
+                  <ion-icon slot="end" name="checkmark-circle"></ion-icon>
+                </div>
+            </ion-button>
+          </div>
+          
+        </div>
+
+        <div *ngIf="slide.title == 'advanced'">
+
+          <div *ngFor="let lesson of AdvancedLessons let i=index">
+            <ion-button id={{lesson.lessonID}} expand="block" size="large" (click)="navigateTo(lesson.lessonID,slide.title)" ngDefaultControl [(ngModel)]="AdvancedLessons" disabled = {{lesson.disabled}} >Lesson {{lesson.lessonID}} 
+                <div *ngIf="lesson.disabled == true;">
+                  <ion-icon slot="end" name="checkmark-circle"></ion-icon>
+                </div>
+            </ion-button>
+          </div>
+          
+        </div>
+        
+        <div *ngIf="slide.title == 'My Training'">
+
+          <div *ngFor="let plan of CustomUserTrainings2 let i=index">
+            <ion-card  (click)="navigateToPlan(plan)" color="dark" id="UserTrainings">
+              <ion-card-title>
+                {{plan.id}}
+                <ion-icon class="test" (click)="deleteUserPlan(plan)" color="light" name="close"></ion-icon>
+
+              </ion-card-title>
+
+            </ion-card>
+
+          </div>
+
+          <ion-button (click)="addExersice()">
+            <ion-icon name="add-circle"></ion-icon>
+
+          </ion-button>
+          <h4>Add Exercise</h4>
+
+        </div>
+
+      </ion-slide>
+    </ion-slides>
+    
+  </ion-content>

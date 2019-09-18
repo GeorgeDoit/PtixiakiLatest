@@ -1,0 +1,83 @@
+{
+    "warmup": [
+        {
+            "title": " Jumping Rope",
+            "content": "3 minutes",
+            "explanation": "Jump and move your hands like you would do with a rope",
+            "url": "../assets/gifs/sxinaki.gif",
+            "calories": "60"
+        },
+        {
+            "title": "PUSH UPS",
+            "content": "x10",
+            "explanation": "Straight your back but carefull, dont put your weight on your back",
+            "url": "../assets/gifs/pushup.gif",
+            "calories": "3.3"
+        },
+        {
+            "title": "PLANK",
+            "content": "x45 seconds",
+            "explanation": "Keep a straight stance",
+            "url": "../assets/gifs/plank.gif",
+            "calories": "2.3"
+        },
+        {
+            "title": "BURPEES",
+            "content": "x45 seconds ",
+            "explanation": "Do a squat , then on a plank stance then up and jump",
+            "url": "../assets/gifs/burpee.gif",
+            "calories": "6"
+        },
+        {
+            "title": "SQUATS",
+            "content": "x45 seconds",
+            "explanation": "Watch your knees have to be behince your foot fingers",
+            "url": "../assets/gifs/squat.gif",
+            "calories": "7.5"
+        }
+    ],
+    "exercises": [
+        {
+            "title": "jab, straight right, jab, straight right",
+            "content": "x25 seconds",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
+            "url": "../assets/gifs/1212.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab, straight right, lefthook  ",
+            "content": "x25",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
+            "url": "../assets/gifs/123.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab, straight right downstairs, left hook upstairs",
+            "content": "x25",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
+            "url": "../assets/gifs/1 2katw 3panw.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "2 jabs downstairs, straight right upstairs",
+            "content": "x25",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
+            "url": "../assets/gifs/asoiKatw2panw.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab -straight right, step, straight right",
+            "content": "x25",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
+            "url": "../assets/gifs/1-2-spasimo2.gif",
+            "calories": "2.9"
+        },
+        {
+            "title": "jab. left hook, straight right",
+            "content": "x25",
+            "explanation": "Dont over extend the elbow, use ur shoulder to cover your face and put some weight on your punch. Roll to evade the oponents anser. Combine them so the opponent wont see the punches coming",
+            "url": "../assets/gifs/1-3-2.gif",
+            "calories": "2.9"
+        }
+    ]
+}

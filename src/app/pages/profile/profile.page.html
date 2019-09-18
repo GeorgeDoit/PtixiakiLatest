@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar >
+      <ion-buttons slot="end">
+          <ion-button color="tertiary" class="logout"  (click)="logoutUser()">Log Out</ion-button>
+       </ion-buttons>
+    <ion-title>PROFILE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Calories Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #CaloriesChartCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Weight Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #WeightChartCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card class="tips" (click)="diet()">
+    <img src="../../../assets/images/diet.jpg"/>
+    <div class="myOverlay">
+      
+      <ion-card-header>
+        Diet Tips
+      </ion-card-header>
+  
+      <ion-card-content>
+      </ion-card-content>
+    </div>
+
+   
+  </ion-card>
+
+</ion-content>

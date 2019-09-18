@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>New Training</ion-title>
+    <ion-buttons slot="start">
+      <ion-icon size="large" color="light" name="arrow-round-back"(click)="abort()"></ion-icon>
+    </ion-buttons>
+
+    <ion-buttons slot="end" (click)="Save()">Save</ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-item transparent *ngFor="let e of exercise ">
+    <ion-card >
+      <div class="img">
+        <img src="{{ e.url }}" />
+      </div>
+    </ion-card>
+
+    <div class="card-title">{{ e.title }}</div> <ion-icon class="test" color="light" name="close" (click)='deleteExercise(e)'></ion-icon> 
+  
+  </ion-item>
+
+  <ion-button (click)='addExercise()'>
+    <ion-icon color="light" name="add-circle-outline"></ion-icon>
+  </ion-button>
+
+</ion-content>

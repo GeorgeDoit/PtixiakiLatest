@@ -1,0 +1,176 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+:root {
+
+  ion-content{
+
+    --background:#fff url('../assets/images/Bg.jpg') 0 0/100% 100% no-repeat;
+    
+  }
+  .card-title{
+    color:#CDB380 ;
+  }
+
+  ion-button {
+    --background:#9C4C3D ;
+    --color: #FFFFFF;
+    --padding-bottom:10px;
+    --padding-top:10px;
+  }
+
+  ion-tab-bar{
+    --background:#222222;
+    --color:#FFFFFF ;
+  }
+
+  ion-tab-button{
+    --color:#FFFFFF ;
+  }
+
+  ion-toolbar{
+    --background:#222222;
+    --color:#FFFFFF;
+  }
+
+  /** primary **/
+  --ion-color-primary: #9C4C3D;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #9C4C3D;
+  --ion-color-primary-tint: #9C4C3D;
+
+  /** secondary **/
+  --ion-color-secondary: #CDB380;
+  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #CDB380;
+  --ion-color-secondary-tint: #CDB380 ;
+
+  /** tertiary **/
+  --ion-color-tertiary: #ffffff;
+  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #ffffff;
+  --ion-color-tertiary-tint: #ffffff;
+
+  /** success **/
+  --ion-color-success: #046380;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #046380;
+  --ion-color-success-tint: #046380;
+
+  /** warning **/
+  --ion-color-warning: #B75C2D;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #ffffff;
+  --ion-color-warning-contrast-rgb: 255, 255, 255;
+  --ion-color-warning-shade: #B75C2D;
+  --ion-color-warning-tint: #B75C2D;
+
+  /** danger **/
+  --ion-color-danger: #9E0101;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #9E0101;
+  --ion-color-danger-tint: #9E0101;
+
+  /** dark **/
+  --ion-color-dark: #222222;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /** medium **/
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #86888f;
+  --ion-color-medium-tint: #a2a4ab;
+
+  /** light **/
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+
+  
+  .ion-color-Creamy-substance {
+    --ion-color-base: #FFEDC2;
+    --ion-color-base-rgb: 255,237,194;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #FFEDC2;
+    --ion-color-tint: #FFEDC2;
+  }
+  .ion-color-melonjolly {
+    --ion-color-base: #32AC71;
+    --ion-color-base-rgb: 232,74,95;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #32AC71;
+    --ion-color-tint: #32AC71;
+  }
+ 
+  .splash {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #222222;
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+  @font-face {
+    font-family: mali;
+    src: url(../assets/fonts/mali.woff2);
+  }
+
+  *{
+    font-family: mali;
+    
+  }
+}

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar transparent >
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="tabs/profile"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-slides pager="true" [options]="slideOpts">
+
+      <ion-slide *ngFor = "let tip of tipArray">
+        <ion-card>
+          <ion-card-title>
+              {{tip.title}}
+            </ion-card-title>
+            <ion-card-content>
+                {{tip.content}}
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+</ion-content>

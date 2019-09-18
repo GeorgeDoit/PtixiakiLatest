@@ -1,0 +1,43 @@
+ion-content{
+    
+}
+// ion-item {
+
+  
+//   }
+  
+ion-list{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+ion-item{
+
+    --background: transparent;
+    box-shadow: none !important;
+
+    height:27%;
+
+    ion-card {
+        height: 90%;
+        width: 30%;
+        box-shadow: none !important;
+    }
+
+    img{
+        text-aling:left;
+        width:90%;
+        border: none;
+    }
+
+    ion-icon{
+        position: absolute;
+        right: 10%;
+        width: 40px;
+        height:35px;
+    }
+    .card-title{
+        top:2px;
+        width:40%;
+        display:block;
+    }
+}
