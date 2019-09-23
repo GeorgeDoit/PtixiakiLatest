@@ -2,10 +2,10 @@
     "warmup": [
         {
             "title": " Jumping Rope",
-            "content": "1 minute",
+            "content": "3 minute",
             "explanation": "jump and move your hands like you would do with a rope",
             "url": "../assets/gifs/sxinaki.gif",
-            "calories": "20"
+            "calories": "40"
         },
         {
             "title": "PUSH UPS",

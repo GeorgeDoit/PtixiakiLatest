@@ -11,7 +11,9 @@
   <ion-card *ngFor="let w of (FullWork | slice: noOfItem - 1:noOfItem)">
     <ion-card-header>
       <ion-card-title>
-        {{ w.title }}
+        {{ w.title }}<br>
+
+        <div class="content">{{ w.content }}</div>      
       </ion-card-title>
       <ion-card-content>
         <img src="{{ w.url }}" />

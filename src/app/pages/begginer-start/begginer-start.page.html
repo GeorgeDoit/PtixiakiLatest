@@ -11,11 +11,12 @@
     <ion-card *ngFor="let w of (this.FullWork | slice: noOfItem - 1:noOfItem)">
       <ion-card-header>
         <ion-card-title>
-          {{ w.title }}
+          {{ w.title }} <br>
+          <div class="content">{{ w.content }}</div>          
         </ion-card-title>
         <ion-card-content>
           <img src="{{ w.url }}" />
-          <div id="exp"> {{ w.explanation }}  </div>
+          <div class="exp"> {{ w.explanation }} </div>
           <ion-button color="danger" size="small" shape="round" (click)="done(0)">SKIP</ion-button>
           <ion-button slot="end" color="success" size="small"shape="round"(click)="done(w.calories)">DONE</ion-button>
         </ion-card-content>

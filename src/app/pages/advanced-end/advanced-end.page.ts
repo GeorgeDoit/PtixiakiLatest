@@ -76,6 +76,8 @@ export class AdvancedEndPage implements OnInit {
             if (this.storedData[i].lessonId == this.lessonId) {
 
               this.calories = this.storedData[i].calories;
+              this.calories = this.calories.toFixed(2);
+
             }
           }
 
