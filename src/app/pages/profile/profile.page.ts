@@ -165,7 +165,7 @@ export class ProfilePage implements OnInit {
 
         for (let i = 0; i < this.CaloriesArray.length; i++) {
 
-          this.Calories[i] = this.CaloriesArray[i].calories;
+          this.Calories[i] = this.CaloriesArray[i].calories.toFixed(2);
           this.Dates[i] = this.CaloriesArray[i].date;
           this.BackgroundColors[i];
 
