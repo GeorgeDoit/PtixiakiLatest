@@ -15,7 +15,18 @@
         </div>
         <div>
             <h3>
-              {{slide.title}}
+              <div *ngIf="slide.title == 'begginer';">
+                  {{slide.title}} <ion-icon class="arrowR" name="arrow-round-forward"></ion-icon>
+                </div>
+                <div *ngIf="slide.title == 'intermediate';">
+                    <ion-icon class="arrowL" name="arrow-round-back"></ion-icon> {{slide.title}} <ion-icon class="arrowR" name="arrow-round-forward"></ion-icon>
+                </div>
+                <div *ngIf="slide.title == 'advanced';">
+                    <ion-icon class="arrowL" name="arrow-round-back"></ion-icon> {{slide.title}} <ion-icon class="arrowR" name="arrow-round-forward"></ion-icon>
+                </div>
+                <div *ngIf="slide.title == 'My Training';">
+                    <ion-icon class="arrowL" name="arrow-round-back"></ion-icon> {{slide.title}}
+                </div>
             </h3>
         </div>
 

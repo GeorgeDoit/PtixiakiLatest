@@ -115,8 +115,9 @@ export class IntermediateEndPage implements OnInit {
       }
 
       this.dataService.setData(this.UidWeight, weightData);
+      setTimeout(() => { this.close(); }, 400);
 
     }
-    
+
   }
 }
