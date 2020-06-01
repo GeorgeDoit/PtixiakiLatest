@@ -1,1 +1,3 @@
-An ionic cordova boxing app, for my thesis.
+This is my thesis project. An IONIC hybrid boxing app.
+
+
