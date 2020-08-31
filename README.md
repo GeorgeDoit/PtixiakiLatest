@@ -1,4 +1,4 @@
-### This is my thesis project. An IONIC hybrid boxing app. It also contains my thesis paper writen in LaTex, and the presentation.
+### This is my thesis project. An IONIC hybrid boxing app. It also contains my Thesis paper writen in LaTex, and the presentation.
 
 # The home page consists of a slider that allows the user to choose the level of difficulty of the exercises
 ![test3](https://user-images.githubusercontent.com/22816905/91708384-e8fa8300-eb89-11ea-9d99-445adac0c6f5.JPG)
