@@ -1,1 +1,1 @@
-# PtyxKeimeno
+# Thesis paper writen in LATEX
