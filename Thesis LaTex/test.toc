@@ -1,0 +1,35 @@
+\selectlanguage *{greek}
+\contentsline {section}{\numberline {1}Ευχαριστίες}{2}%
+\contentsline {section}{\numberline {2}Σύνοψη}{3}%
+\contentsline {section}{\numberline {3}Abstract}{4}%
+\contentsline {section}{\numberline {4}Εισαγωγή}{8}%
+\contentsline {subsection}{\numberline {4.1}Περίληψη}{8}%
+\contentsline {subsection}{\numberline {4.2}Κίνητρο για τη διεξαγωγή της εργασίας}{8}%
+\contentsline {subsection}{\numberline {4.3}Σκοπός και στόχοι εργασίας}{8}%
+\contentsline {section}{\numberline {5}Υβριδικές mobile εφαρμογές}{9}%
+\contentsline {subsection}{\numberline {5.1}Τι είναι μία φορητή εφαρμογή}{9}%
+\contentsline {subsection}{\numberline {5.2}Τι σημαίνει υβριδική εφαρμογή}{9}%
+\contentsline {subsection}{\numberline {5.3}Λίγα λόγια για το Apache Cordova}{11}%
+\contentsline {subsection}{\numberline {5.4}Λίγα λόγια για τo Ionic Framework}{14}%
+\contentsline {subsection}{\numberline {5.5}Τι σημαίνει ο όρος SDK}{15}%
+\contentsline {subsection}{\numberline {5.6}Τι σημαίνει ο όρος API}{16}%
+\contentsline {subsection}{\numberline {5.7}Λίγα λόγια για την Angular}{17}%
+\contentsline {section}{\numberline {6}Φάσεις Ανάπτυξης Εφαρµογής}{18}%
+\contentsline {subsection}{\numberline {6.1}Ανάλυση}{18}%
+\contentsline {subsection}{\numberline {6.2}Σχεδίαση}{20}%
+\contentsline {subsection}{\numberline {6.3}Υλοποίηση}{22}%
+\contentsline {subsubsection}{\numberline {6.3.1}Εγκατάσταση Λογισμικού}{22}%
+\contentsline {paragraph}{Eγκατασταση Node}{22}%
+\contentsline {paragraph}{Εγκατάσταση Visual Studio Code}{25}%
+\contentsline {paragraph}{Εγκατάσταση npm}{26}%
+\contentsline {paragraph}{Εγκατάσταση Ionic 4}{27}%
+\contentsline {subsection}{\numberline {6.4}Έλεγχος}{32}%
+\contentsline {subsection}{\numberline {6.5}∆ιανοµή}{32}%
+\contentsline {section}{\numberline {7}Παρουσίαση εφαρμογής με περιγραφή κώδικα}{33}%
+\contentsline {subsection}{\numberline {7.1}Δημιουργία συστήματος ελέγχου ταυτότητας χρήστη}{33}%
+\contentsline {subsection}{\numberline {7.2}Home Page}{37}%
+\contentsline {subsection}{\numberline {7.3}Lesson Page}{42}%
+\contentsline {subsection}{\numberline {7.4}Profile Page}{46}%
+\contentsline {section}{\numberline {8}Settings Page}{48}%
+\contentsline {section}{\numberline {9} Συµπεράσµατα και Μελλοντικές Επεκτάσεις}{50}%
+\contentsline {section}{\numberline {10}Δικτυογραφία-Βιβλιογραφία}{51}%

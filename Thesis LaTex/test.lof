@@ -1,0 +1,38 @@
+\selectlanguage *{greek}
+\contentsline {figure}{\numberline {1}{\ignorespaces Αρχιτεκτονική Apache Cordova.}}{11}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Αρχιτεκτονική Cordova Plugin.}}{12}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Αρχιτεκτονική Ionic.}}{15}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Διάγραμμα ροής προγράμματος.}}{21}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Εγκατάσταση Node.js Νο.1}}{22}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Εγκατάσταση Node.js Νο.2}}{23}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Εγκατάσταση Node.js Νο.3}}{24}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Εγκατάσταση Visual Studio Code Νο.1}}{25}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Εγκατάσταση Visual Studio Code Νο.2}}{26}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Εγκατάσταση npm Νο.1}}{26}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Εγκατάσταση npm Νο.2}}{27}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Εγκατάσταση Ionic Νο.1}}{27}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Εγκατάσταση Ionic Νο.2}}{28}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Εγκατάσταση Ionic Νο.3}}{29}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Δομή έργου Ionic}}{30}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Ionic serve command}}{31}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Firebase Sign-in method}}{33}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Firebase Authentication}}{34}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Authendication Service}}{35}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Authentication Guard Service}}{36}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Home Page}}{37}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Home Page imports}}{37}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Constructor και ngOnInit}}{38}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Συνάρτηση checkForUser}}{39}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Παράδειγμα HTML της Home Page}}{39}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Home Page user's custom training No.1}}{40}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Home Page user's custom training Νο.2}}{41}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Lesson Page Νο.1}}{43}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Παράδειγμα κώδικα της Home Page}}{43}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Παράδειγμα κώδικα της Lesson Page}}{43}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Lesson Page}}{44}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Παράδειγμα HTML της Lesson Page}}{44}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Συνάρτηση done της Lesson Page}}{45}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Profile Page}}{46}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Συναρτήσεις διαγραμμάτων της Profile Page}}{47}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Settings Page}}{48}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Συνάρτηση Reset της Settings Page}}{49}%
